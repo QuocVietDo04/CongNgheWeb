@@ -18,7 +18,7 @@ class PostsTableSeeder extends Seeder
         for ($i = 0; $i < 100; $i++) {
             DB::table('posts')->insert([
                 'title' => $faker->sentence,
-                'content' => $faker->paragraph
+                'content' => $faker->paragraph,
             ]);
         }
     }
